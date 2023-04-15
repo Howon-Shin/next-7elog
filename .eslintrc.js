@@ -16,7 +16,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "react", "react-hooks"],
   rules: {
     "prettier/prettier": [
       "error",
@@ -25,5 +25,9 @@ module.exports = {
         endOfine: "auto",
       },
     ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "react/react-in-jsx-scope": "off",
   },
 };
